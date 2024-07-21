@@ -4,10 +4,15 @@ fn bigger(a: i32, b: i32) -> i32 {
     // Do not use:
     // - another function call
     // - additional variables
+    if a > b {
+        return a
+    }
+    return b
 }
 
 fn main() {
     // You can optionally experiment here.
+    println!("Who is bigger {}", bigger(2, 3));
 }
 
 // Don't mind this for now :)
